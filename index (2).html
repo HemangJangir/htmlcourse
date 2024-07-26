@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    * {
+      margin: 0px;
+    }
+
+    .navlink {
+      color: aliceblue;
+    }
+
+    .drop {
+      position: relative;
+      left: 780px;
+    }
+
+    ul a{
+      text-decoration: none;
+      font-size: 18px;
+      color: brown;
+      position: relative;
+      right: 30px;
+    }
+    .icon{
+        position: relative;
+        right: 40px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    button
+    {
+      border-radius: 10px;
+    }
+    body{
+      overflow-x: hidden;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <a href="#" style="text-decoration: none;">
+    <div style="display: flex; justify-content: center; text-align: center; background-color: rgb(42, 13, 67);">
+      <p class="text-lowercase" style="position: relative; top: 5px; height: 20px; color: white; ">There's a newer
+        bootstrap version!</p>
+    </div>
+  </a>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: sticky; top: 0px; z-index: 1;">
+    <div class="container-fluid"
+      style="background-color: rgba(87,62,125,255); height: 60px; margin: 0px;position: relative;bottom: 10px; padding-left: 18px;">
+      <a href="#"> <img
+          src="https://imgs.search.brave.com/6ncEIUuiIojxYn8u2K32lNVlBJSaL83vniNDl5c-c48/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zZWVr/bG9nby5jb20vaW1h/Z2VzL0IvYm9vdHN0/cmFwLWxvZ28tM0Mz/MEZCMkExNi1zZWVr/bG9nby5jb20ucG5n"
+          alt="" width="40px" style="border: 1px solid gold; border-radius: 10px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown" style="display: flex;">
+        <ul class="navbar-nav">
+          <div class="home" style="display: flex; position: relative; left: 30px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="color: rgb(209, 204, 213);">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: rgb(193, 186, 197);">Documentation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white;">Example</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: rgb(193, 186, 197);">Themes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: rgb(193, 186, 197);">Expo</a>
+            </li>  
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: rgb(193, 186, 197);">Vlog</a>
+            </li>
+          </div>
+          <div class="drop" style="display: flex; align-items: center;gap: 20px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                style="color: white;">v4.0</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <div class="icon">
+                <i class="fa-brands fa-github" style="font-size: 20px; color: violet;"></i>
+                <i class="fa-brands fa-twitter" style="font-size: 20px; color: violet;"></i>
+                <button style="font-size: 19px; background-color: rgba(87,62,125,255); color: gold; border: 2px solid gold;"><a href="#"></a>Download</button>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div style="background-color: rgb(242, 240, 240);">
+    <div class="example" style="margin: 40px; display: flex; padding-bottom: 40px;">
+      <div style="width: 67%;">
+        <p style="font-size: 60px; margin: 0px;">Example</p>
+        <p style="font-size: 25px; margin: 0px;">Quickly get a project started with any of our examples ranging from
+          using parts of the framework to custom components and layouts.</p> <br>
+        <button style="color: gray; font-size: 25px; border: 1px solid;"><a href="#"
+            style="text-decoration: none; color: rgba(87,62,125,255);">Download SourceCode</a></button>
+      </div>
+      <div class="image" style="display: flex; align-items: center; position: relative; left: 130px;">
+        <div>
+          <img src="https://cdn.softwarereviews.com/production/logos/offerings/9950/large/figma2.png?1644269444" alt=""
+            height="80px">
+        </div>
+        <div>
+          <p>redesign the way you jam <br>with Figjam AI</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="cards" style="margin: 40px;">
+    <div class="first">
+      <div>
+        <p style="font-size: 40px; margin: 0px;">Custom components</p>
+        <p style="font-size: 20px; margin: 0px;">Brand new components</p>
+      </div> <br><br>
+      <div class="cards1" style="display: flex; gap: 60px;">
+        <div class="card" style="width: 18rem;">
+          <img src="img1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" style="text-decoration: none;">
+              <h5 class="card-title">Album</h5>
+            </a>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="img2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" style="text-decoration: none;">
+              <h5 class="card-title">Pricing</h5>
+            </a>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="img3.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" style="text-decoration: none;">
+              <h5 class="card-title">Checkout</h5>
+            </a>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="img4.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" style="text-decoration: none;">
+              <h5 class="card-title">Product</h5>
+            </a>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="first">
+
+        <div class="cards1" style="display: flex; gap: 60px;">
+          <div class="card" style="width: 18rem;">
+            <img src="img1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <a href="#" style="text-decoration: none;">
+                <h5 class="card-title">Album</h5>
+              </a>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="img2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <a href="#" style="text-decoration: none;">
+                <h5 class="card-title">Checkout</h5>
+              </a>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="img3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <a href="#" style="text-decoration: none;">
+                <h5 class="card-title">Pricing</h5>
+              </a>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="img4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <a href="#" style="text-decoration: none;">
+                <h5 class="card-title">Product</h5>
+              </a>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+
+            </div>
+          </div>
+        </div> <br><br><br>
+        <div class="second">
+          <div>
+            <p style="font-size: 40px; margin: 0px;">Framework</p>
+            <p style="font-size: 20px; margin: 0px;">Brand new components</p>
+          </div><br><br>
+          <div class="cards2" style="display: flex; gap: 60px;">
+            <div class="card" style="width: 18rem;">
+              <img src="img1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <a href="#" style="text-decoration: none;">
+                  <h5 class="card-title">Album</h5>
+                </a>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <a href="#" style="text-decoration: none;">
+                  <h5 class="card-title">Album</h5>
+                </a>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="img3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <a href="#" style="text-decoration: none;">
+                  <h5 class="card-title">Album</h5>
+                </a>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+
+              </div>
+            </div>
+          </div> <br><br><br>
+          <div class="first">
+            <div>
+              <p style="font-size: 40px; margin: 0px;">Navbar</p>
+              <p style="font-size: 20px; margin: 0px;">Brand new components</p>
+            </div> <br><br>
+            <div class="cards1" style="display: flex; gap: 60px;">
+              <div class="card" style="width: 18rem;">
+                <img src="img1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Album</h5>
+                  </a>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="img2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Album</h5>
+                  </a>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="img3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Album</h5>
+                  </a>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="img4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="#" style="text-decoration: none;">
+                    <h5 class="card-title">Album</h5>
+                  </a>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+
+                </div>
+              </div>
+            </div><br><br>
+            <div class="first">
+              <div>
+                <p style="font-size: 40px; margin: 0px;">Experiment</p>
+                <p style="font-size: 20px; margin: 0px;">Brand new components</p>
+              </div> <br><br>
+              <div class="cards1" style="display: flex; gap: 60px;">
+                <div class="card" style="width: 18rem;">
+                  <img src="img1.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href="#" style="text-decoration: none;">
+                      <h5 class="card-title">Album</h5>
+                    </a>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="img2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href="#" style="text-decoration: none;">
+                      <h5 class="card-title">Album</h5>
+                    </a>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+
+                  </div>
+                </div>
+              </div> <br><br>
+              <div>
+                <ul style="list-style-type: none; display: flex; gap: 20px;">
+                  <li><a href="#">GitHub</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Example</a></li>
+                  <li><a href="#">About</a></li>
+                </ul>
+                <p style="font-size: 19px;">Designed and built with all the love in the world by <a href="#">@mdo</a> and <a href="#">@fat </a>. Maintained by the
+                  core team with the help of our contributors.
+
+                  <br>Currently v4.0.0. Code licensed MIT, docs CC BY 3.0.
+                </p>
+              </div>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
